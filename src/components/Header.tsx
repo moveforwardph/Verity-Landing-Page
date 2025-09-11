@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Menu, X } from 'lucide-react';
-import logo from '../../dist/assets/logo.svg';
-
+import React, { useState, useEffect } from "react";
+import { Shield, Menu, X } from "lucide-react";
+import logo from "../../dist/assets/logo-jhVFFkXM.svg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,33 +10,37 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { href: '#features', label: 'Features' },
-    { href: '#value', label: 'Value' },
-    { href: '#impact', label: 'Impact' },
-    { href: '#vision', label: 'Vision' },
-    { href: '#contact', label: 'Contact' }
+    { href: "#features", label: "Features" },
+    { href: "#value", label: "Value" },
+    { href: "#impact", label: "Impact" },
+    { href: "#vision", label: "Vision" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+      }`}
+    >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-1">
             <div className="p-2 bg-gradient-to-br  rounded-lg">
-               <img src={logo} alt="Logo" className="h-12 w-auto" />
+              <img src={logo} alt="Logo" className="h-12 w-auto" />
               <></>
             </div>
-            <span className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-slate-800' : 'text-white'
-            }`}>
-              Verity 
+            <span
+              className={`text-xl font-bold transition-colors duration-300 ${
+                isScrolled ? "text-slate-800" : "text-white"
+              }`}
+            >
+              Verity
             </span>
           </div>
 
@@ -48,7 +51,7 @@ const Header = () => {
                 key={item.href}
                 href={item.href}
                 className={`font-medium hover:text-teal-500 transition-colors duration-300 ${
-                  isScrolled ? 'text-slate-700' : 'text-white/90'
+                  isScrolled ? "text-slate-700" : "text-white/90"
                 }`}
               >
                 {item.label}
@@ -67,9 +70,17 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? 'text-slate-800' : 'text-white'}`} />
+              <X
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-slate-800" : "text-white"
+                }`}
+              />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? 'text-slate-800' : 'text-white'}`} />
+              <Menu
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-slate-800" : "text-white"
+                }`}
+              />
             )}
           </button>
         </div>

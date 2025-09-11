@@ -102,9 +102,11 @@ const ValuePropositions = () => {
               Join forward-thinking security organizations that are setting new standards 
               for accountability, efficiency, and guard welfare.
             </p>
+            <a href="#contact">
             <button className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
               Schedule Your Pilot Program
             </button>
+            </a>
           </div>
         </div>
       </div>

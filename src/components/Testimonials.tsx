@@ -39,7 +39,7 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        {/* Testimonials */}
+        {/* Testimonials
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Trusted by Security Leaders
@@ -56,26 +56,26 @@ const Testimonials = () => {
               key={index}
               className="bg-slate-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative"
             >
-              {/* Quote Icon */}
+              
               <div className="absolute -top-4 left-8">
                 <div className="w-8 h-8 bg-cyan-800 rounded-full flex items-center justify-center">
                   <Quote className="w-4 h-4 text-white" />
                 </div>
               </div>
 
-              {/* Rating */}
+              
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
 
-              {/* Quote */}
+              
               <p className="text-slate-700 leading-relaxed mb-6 italic">
                 "{testimonial.quote}"
               </p>
 
-              {/* Author */}
+              
               <div className="flex items-center space-x-4">
                 <img
                   src={testimonial.avatar}
@@ -90,7 +90,7 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div>  
 
         {/* Trust Signals */}
         <div className="text-center">

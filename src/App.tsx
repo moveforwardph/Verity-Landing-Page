@@ -18,7 +18,7 @@ function App() {
       <ValuePropositions />
       <ImpactMetrics />
       <FutureVision />
-      <Testimonials />
+      
       <FinalCTA />
       <Footer />
     </div>

@@ -17,7 +17,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 // new page
 import OneParanaque from "./pages/OneParanaque";
-import ScrollToTop from "./components/ScrolltoTop";
+import ScrollToTop from "./components/ScrollToTop"
 
 
 function HomeLanding() {

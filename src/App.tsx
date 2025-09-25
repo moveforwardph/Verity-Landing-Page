@@ -12,10 +12,12 @@ import Testimonials from "./components/Testimonials";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
+
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 // new page
 import OneParanaque from "./pages/OneParanaque";
+import ScrollToTop from "./components/ScrolltoTop";
 
 function HomeLanding() {
   return (
@@ -44,7 +46,9 @@ function HomeLanding() {
 export default function App() {
   return (
     <HelmetProvider>
+ 
       <BrowserRouter>
+             <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomeLanding />} />
           <Route path="/projects/OneParanaque" element={<OneParanaque />} />

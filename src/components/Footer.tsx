@@ -65,7 +65,12 @@ const Footer = () => {
         <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-slate-400 mb-4 md:mb-0">
-              <span>© 2025 Verity • Command and Control . All rights reserved.</span>
+<span>© 2025 Verity is a product of {" "}
+  <a href="https://mfi.company/" target="_blank" rel="noopener noreferrer" className="text-cyan-400">
+     MFI
+  </a>. All rights reserved.
+</span>
+
               <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
               <a href="#" className="hover:text-white transition-colors duration-300">Security</a>
